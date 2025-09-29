@@ -1,7 +1,18 @@
-import { initializeApp, getApps, getApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInAnonymously } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+// firebase/config.ts
 
+import { initializeApp, getApps, getApp } from "firebase/app";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signInAnonymously,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+  createUserWithEmailAndPassword,
+} from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+// Env config
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -11,12 +22,20 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
-console.log("API KEY:", process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
 
+// Safe initialization
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const provider = new GoogleAuthProvider();
 
-
+// Auth & Firestore
 export const auth = getAuth(app);
 export const db = getFirestore(app);
-export { provider, signInWithPopup, signInAnonymously };
+export const provider = new GoogleAuthProvider();
+
+// Export all auth methods your components use
+export {
+  signInWithPopup,
+  signInAnonymously,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+  createUserWithEmailAndPassword,
+};
