@@ -1,0 +1,57 @@
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #002244;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: #dbeafe;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.icon {
+  color: #2563eb;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+.starRating {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.halfStar {
+  color: #cbd5e1;
+}
+
+.stat {
+  font-size: 24px;
+  font-weight: 700;
+  color: #022c44;
+  margin: 8px 0;
+}
+
+.text {
+  font-size: 14px;
+  color: #334155;
+}

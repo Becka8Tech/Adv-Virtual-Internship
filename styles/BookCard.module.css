@@ -1,0 +1,89 @@
+/* styles/BookCard.module.css */
+.card {
+  background-color: #fff;
+  border: 1px solid #e1e7ea;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #032b41;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.author {
+  font-size: 12px;
+  color: #6b7c86;
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #394b59;
+  margin: 6px;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7c86;
+}
+
+.icon {
+  margin-right: 4px;
+  font-size: 14px;
+  color: #6b7c86;
+}
+
+.linkReset {
+  text-decoration: none;
+  color: inherit;
+}
+
+.premiumTag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #032b41;
+  color: #ffffff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 10;
+}
+

@@ -1,0 +1,76 @@
+/* styles/Library.module.css */
+.libraryContainer {
+  padding: 24px;
+}
+
+.libraryContainerS {
+  padding-left: 272px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #032b41;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.count {
+  font-size: 14px;
+  color: #6b7c93;
+  margin-bottom: 16px;
+}
+
+.bookGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.bookRow {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin-bottom: 32px;
+}
+
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.loginText {
+  font-weight: 700;
+  color: #032b41;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.loginBtn {
+  background-color: #2bd97c;
+  color: #032b41;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.loginBtn:hover {
+  background-color: #00a55a;
+}
+
+/* styles/BookCard.module.css */
+.linkReset {
+  text-decoration: none;
+  color: inherit;
+}

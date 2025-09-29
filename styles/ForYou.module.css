@@ -1,0 +1,348 @@
+/* ========== LAYOUT CONTAINER ========== */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+  width: 240px;
+  background: #f4f9f8;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 40px;
+}
+
+.menu,
+.menuBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuBottom {
+  margin-top: 380px;
+}
+
+/* ========== MENU ITEMS ========== */
+.menuItem {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  color: #032b41;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 12px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  padding-left: 16px;
+  border-left: 4px solid transparent;
+}
+
+.menuItem:hover {
+  background-color: #f0efef;
+}
+
+.activeItem {
+  background-color: #f0efef;
+  border-left: 4px solid #2bd97c;
+  color: #032b41;
+}
+
+.disabledItem {
+  color: #032b41;
+  cursor: not-allowed;
+}
+
+.disabledItem:hover {
+  background-color: #f4f9f8;
+  border-left: 4px solid transparent;
+}
+
+/* ========== ICONS ========== */
+.icon {
+  font-size: 24px;
+}
+
+/* ========== MAIN CONTENT ========== */
+.main {
+  flex: 1;
+  background: #fff;
+}
+
+.searchInput {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+/* ========== TEXT ========== */
+.heading {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #032b41;
+}
+
+.subtext {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* ========== CENTERED CONTAINER ========== */
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== FEATURED CARD (Selected Book) ========== */
+.featuredWrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 0px;
+}
+
+.selectedBookLine {
+    width: 1px;
+    background-color: #bac8ce;
+}
+
+.featuredCard {
+  display: flex;
+  justify-content: space-between;
+  width: calc((100% / 3) * 2);
+  background-color: #fbefd6;
+  border-radius: 4px;
+  padding: 24px;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.featuredLeft {
+  flex: none;
+  max-width: 220px;
+  font-size: 16px;
+  color: #032b41;
+  font-weight: 500;
+}
+
+.featuredCenter {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featuredImage {
+  border-radius: 4px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.featuredRight {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 150px;
+}
+
+.featuredTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #032b41;
+  margin: 0;
+}
+
+.featuredAuthor {
+  font-size: 14px;
+  color: #394547;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.audioDuration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #032b41;
+}
+
+.playIconCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playIcon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+
+/* ========== RECOMMENDED BOOKS ========== */
+.recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.bookCard {
+  width: 160px;
+  text-align: center;
+}
+
+.bookCard h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #032b41;
+}
+
+.author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.meta {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+}
+
+/* ========== DISABLED ITEM ========== */
+.disabledItem:hover {
+  cursor: not-allowed;
+  background-color: #f7faf9;
+}
+
+/* ========== ACTIVE MENU ITEM ========== */
+.active {
+  border-left: 4px solid #2bd97c;
+  background-color: #f0efef;
+  padding-left: 12px;
+}
+
+/* ========== SETTINGS ========== */
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0px 24px;
+  margin: 0 auto;
+}
+
+.loginBtn {
+  background-color: #2bd97c;
+  color: #032b41;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.loginBtn:hover {
+  background-color: #00a55a;
+}
+
+.settingsPage {
+  padding: 0px 24px;
+  margin: 0 47.5px;
+}
+
+/* ========== SKELETON SETTINGS PAGE ========== */
+.libraryContainerS {
+  padding-left: 326px;
+}
+
+.skeletonBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skeletonLine {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ========== LOGIN WRAPPER ========== */
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.loginText {
+  font-weight: 700;
+  color: #032b41;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* styles/BookCard.module.css */
+.linkReset {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* settings.tsx button */
+.upgradeBtn {
+  background-color: #2BD97C;
+  color: #032b41;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.upgradeBtn:hover {
+  background-color: #24c56e;
+}

@@ -1,0 +1,96 @@
+.bookContainer {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.bookHeader {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.text {
+  flex: 1;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.bookImage {
+  border-radius: 4px;
+}
+
+.subTitle {
+  margin: 8px 0 24px;
+  color: #666;
+  font-size: 16px;
+}
+
+.metaRow {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #032b41;
+  margin-bottom: 8px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.readBtn,
+.listenBtn {
+  background-color: #032b41;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.listenBtn {
+  background-color: #032b41;
+}
+
+.libraryText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1673ff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.bookContent {
+  margin-top: 40px;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.tag {
+  background-color: #e0efea;
+  color: #032b41;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: not-allowed;
+}
+
+.description {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
